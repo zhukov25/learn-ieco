@@ -72,7 +72,7 @@ nav a {
 .main {
     min-height: 600px;
     width: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/images/running.gif") no-repeat center center ;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./src/images/running.gif") no-repeat center center ;
     background-size: cover;
 
     display: flex;
