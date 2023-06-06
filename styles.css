@@ -541,6 +541,10 @@ footer hr {
     .about-us-main {
         margin: 20px auto;
     }
+    .about-us-main img {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 375px) {
