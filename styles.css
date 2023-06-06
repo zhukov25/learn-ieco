@@ -24,6 +24,7 @@ header {
     display: flex;
     width: 100%;
     align-items: center;
+
 }
 
 nav {
@@ -65,6 +66,31 @@ nav a {
     padding-left: 25px;
 }
 
+/* ///////// */
+
+.burger-menu {
+    display: none;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    transform: none;
+}
+
+.burger-icon {
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    margin: 6px 0;
+    
+}
+
+.show {
+    display: flex !important;
+}
+
+/* ////////// */
 .container {
     width: 1120px;
     margin: 0 auto;
@@ -266,6 +292,19 @@ footer hr {
     -moz-box-shadow: 0px 0px 21px 4px rgba(0,0,0,0.47);
 }
 
+.turn1 {
+    transform: translateX(50%) rotate(45deg);;
+     
+ }
+ .turn2 {
+    transform: translateX(-50%) rotate(-45deg);
+ }
+
+.turned {
+    display: flex;
+    flex-direction: row !important;
+}
+
 @media screen and (max-width: 1440px) {
     .container {
         width: 950px;
@@ -397,6 +436,60 @@ footer hr {
         margin-top: 25px;
     }
 }
+
+@media screen and (max-width: 570px) {
+    .burger-menu {
+        display: block;
+        position: absolute;
+        right: 25px;
+    }
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        z-index: 5;
+        flex-direction: column;
+        justify-content: center;
+        overflow-y: hidden;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+    }
+    nav li {
+        font-size: 55px;
+    }
+    nav li a {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .burger-menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .burger-icon {
+        width: 30px;
+        height: 4px;
+        background: #fff;
+        margin: 6px 0;
+        
+    }
+    
+}
+
 
 @media screen and (max-width: 425px) {
     
