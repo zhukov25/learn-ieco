@@ -70,6 +70,7 @@ nav a {
 
 .burger-menu {
     display: none;
+    visibility: hidden;
     align-items: center;
     cursor: pointer;
     z-index: 10;
@@ -439,6 +440,7 @@ footer hr {
 @media screen and (max-width: 570px) {
     .burger-menu {
         display: block;
+        visibility: inherit;
         position: absolute;
         right: 25px;
     }

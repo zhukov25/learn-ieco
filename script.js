@@ -7,28 +7,32 @@ const links = document.querySelectorAll('a');
 const body = document.querySelector('body');
 
 // /////////////////////////////////////////////////////////////
-
-menuToggle.addEventListener('click', () => {
-    navigation.classList.toggle('show');
-    console.log('press');
-    line1.classList.toggle('turn1');
-    line2.classList.toggle('turn2');
-    burger.classList.toggle('turned');
-    burger.classList.contains('turned') ? body.style.overflowY = 'hidden' : body.style.overflowY = '';
-    
-});
-
-
-links.forEach((a) => {
-    a.addEventListener('click', () => {
-        console.log('press');
+if (window.innerWidth <= 570) {
+    menuToggle.addEventListener('click', () => {
         navigation.classList.toggle('show');
+        console.log('press');
         line1.classList.toggle('turn1');
         line2.classList.toggle('turn2');
         burger.classList.toggle('turned');
-        body.style.overflowY = '';
+        burger.classList.contains('turned') ? body.style.overflowY = 'hidden' : body.style.overflowY = '';
+        
     });
-});
+    
+    
+    links.forEach((a) => {
+        a.addEventListener('click', () => {
+            console.log('press');
+            navigation.classList.toggle('show');
+            line1.classList.toggle('turn1');
+            line2.classList.toggle('turn2');
+            burger.classList.toggle('turned');
+            body.style.overflowY = '';
+        });
+    });
+}
 
+
+
+console.log(window.innerWidth);
 
 
